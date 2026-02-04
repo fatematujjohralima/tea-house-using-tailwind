@@ -3,6 +3,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tea House</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +31,7 @@
 
 </head>
 
-  <body class="manrope">
+  <body class="font-manrope">
     <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28 ">
       <!-- header section -->
@@ -217,5 +231,79 @@
           </section>
 
     </main>
+    <footer class="bg-orange-100 py-28">
+      <div class=" w-9/12 mx-auto md:w-7/12">
+        <div class="flex justify-between mb-24">
+          <div>
+            <img src="images/cup.png" alt="">
+          </div>
+          <div class="flex gap-16">
+            <p class="text-xl">Ready to get strated?</p>
+            <button  class="px-6 py-4 text-white bg-gradient-to-r from-orange-500 to bg-red-600 text-xl font-bold">Get Started</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-36 text-gray-500">
+          <!-- 1st -->
+          <div>
+            <h1 class="text-xl font-bold text-black">Quick Links</h1>
+            <ul class="mt-5 space-y-5">
+              <li>
+                <a class="hover:text-blue-300" href="">Home</a>
+              </li>
+               <li>
+                <a class="hover:text-blue-300" href="">About Us</a>
+              </li>
+               <li>
+                <a class="hover:text-blue-300" href="">Insurance</a>
+              </li>
+               <li>
+                <a class="hover:text-blue-300" href="">Privacy Policy</a>
+              </li>
+          </div>
+          <!-- 2nd -->
+           <div>
+            <h1 class="text-xl font-bold text-black">Our Service</h1>
+            <ul class="mt-5 space-y-5">
+              <li>
+                <a class="hover:text-blue-300" href="">Life Insurance</a>
+              </li>
+               <li>
+                <a class="hover:text-blue-300" href="">Car Insurance</a>
+              </li>
+               <li>
+                <a class="hover:text-blue-300" href="">Health Insurance</a>
+              </li>
+               
+          </div>
+          <!-- 3rd -->
+           <div>
+            <h1 class="text-xl font-bold text-black">Help</h1>
+            <ul class="mt-5 space-y-5">
+              <li>
+                <a class="hover:text-blue-300" href="">FAQs</a>
+              </li>
+               <li>
+                <a class="hover:text-blue-300" href="">Contact Us</a>
+              </li>
+          </div>
+          <!-- 4th -->
+           <div class="space-y-5">
+            <h1 class="text-xl font-bold text-black">Subscribe to our newsletter</h1>
+            <div class="flex">
+              <input class="bg-transparent border-b-2 border-gray-500" type="text" placeholder="Enter address"  >
+              <i class="fa-solid fa-greater-than bg-gradient-to-r from-orange-500 to bg-red-600 h-8 md:w-8 inline-flex justify-center items-center text-white rounded-full "></i>
+            </div>
+            <div class="flex gap-6 py-8">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+           </div>
+        </div>
+        <div class="text-center mt-16">
+          <small class=" text-gray-700">© 2027 UIDesign.to - All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
